@@ -12,7 +12,7 @@ import {
 import Style from './BasicInput.style';
 
 interface BasicInputProps {
-  mode?: 'regular' | 'center' | 'search';
+  mode?: 'regular' | 'center';
   type?: 'default' | 'numeric';
   value?: string;
   placeholder?: string;
@@ -35,7 +35,6 @@ const BasicInput = ({
   const [isFocused, setIsFocused] = useState<boolean>(false);
   const center = mode === 'center';
   const hasClearButton = mode !== 'center';
-  const showSearchIcon = mode === 'search';
   const showClearButton = Boolean(hasClearButton && value && isFocused);
   const inputRef = useRef<any>();
   const textColorStyleName = value ? Style.textStyle : Style.placeholderStyle;
@@ -76,12 +75,12 @@ const BasicInput = ({
           center ? Style.center : {},
           containerColorStyleName,
         ]}>
-        {showSearchIcon && (
+        {/* {showSearchIcon && (
           <TouchableOpacity
             style={Style.searchIconContainer}
             onPress={() => focus()}>
           </TouchableOpacity>
-        )}
+        )} */}
         <TextInput
           placeholder={placeholder}
           style={[Style.input, center ? Style.center : {}, textColorStyleName]}

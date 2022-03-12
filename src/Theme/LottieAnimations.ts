@@ -1,4 +1,4 @@
 export default {
-    smile:require('../Assets/LottieAnimations/smile.json'),
-    sad:require('../Assets/LottieAnimations/sad.json')
+    smile:require('../Assets/LottieAnimations/happy.json'),
+    sad:require('../Assets/LottieAnimations/sad_.json')
 }

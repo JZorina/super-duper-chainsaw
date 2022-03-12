@@ -14,20 +14,24 @@ import LottieAnimations from '../Theme/LottieAnimations';
 import { dictionary } from '../Utils/Texts';
 
 const SubmitBloodTestResult = () => {
-    const [temp, setTemp] = useState<boolean>(false);
-    const [testName, setTestName] = useState<string>('');
-    const [testValue, setTestValue] = useState<number>(0);
-    const dispatch = useDispatch();
-    const labResultsStatus =  useSelector(GeneralState.Selectors.selectBloodTestDataStatus);
+  const dispatch = useDispatch();
+  const labResultsStatus =  useSelector(GeneralState.Selectors.selectBloodTestDataStatus);
+  const [displayResult, setdisplayResult] = useState<boolean>(false);
+  const [imageType, setImageType] = useState<number>(0);
+  const [categoryName, setCategoryName] = useState<string>('');
+  const [testName, setTestName] = useState<string>('');
+  const [testValue, setTestValue] = useState<number>(0);
+    
 
-    const handlePress = async() => {
-        //ADD VALIDATION!!
-        dispatch(LabResultsState.Actions.setBloodTestInputs({testName,testValue}));
-        await dispatch(LabResultsState.Thunks.getLabResults(()=> {
-          console.log('dddddddddddddddddddddd',labResultsStatus)
-          setTemp(labResultsStatus)
-        }));
-    }
+  const handlePress = async() => {
+    //ADD VALIDATION!!
+    setdisplayResult(!displayResult);
+  //     dispatch(LabResultsState.Actions.setBloodTestInputs({testName,testValue}));
+  //     await dispatch(LabResultsState.Thunks.getLabResults(()=> {
+  //       console.log('dddddddddddddddddddddd',labResultsStatus)
+  //       setdisplayResult(labResultsStatus)
+  //     }));
+  }
   
   return (
     <SafeAreaView style={styles.flex}>
@@ -55,16 +59,18 @@ const SubmitBloodTestResult = () => {
           {dictionary.pressMe}
         </StandartButton>
       </View>
-        <View style={styles.bigScale}>
-       { temp && 
-       <>
-        <StandardText >{dictionary.header}</StandardText>
-        <Lottie
-          animation={LottieAnimations.smile}
-          style={styles.standartScale}
-          skipAnimation={false}
-        />
-       </>
+        <View style={styles.buttomContainer}>
+       {displayResult && 
+       <View>
+          <StandardText style={styles.buttomLabel}>{'dddddddddddd'}</StandardText>
+          <Lottie
+            loop
+            animation={imageType ? LottieAnimations.sad :LottieAnimations.smile}
+            style={styles.lottieScale}
+            skipAnimation={false}
+          />
+       </View>
+    
        }
         </View>
     
@@ -82,9 +88,20 @@ const styles = StyleSheet.create({
     standartScale:{
         height:'50%',width:'70%'
     },
+    lottieScale:{
+      height:150,
+      width:150
+    },
     bigScale:{
-        flex:2, justifyContent:'center', alignItems:'center'
-    }
+        flex:1, justifyContent:'center', alignItems:'center'
+    },
+    buttomLabel:{
+      textAlign:'center'
+    },
+    buttomContainer:{
+        flex:2.5, justifyContent:'center', alignItems:'center'
+    },
+
 })
 
 
