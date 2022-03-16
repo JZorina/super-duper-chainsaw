@@ -1,0 +1,11 @@
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults.Application\bin\Debug\net5.0\SubmitBloodTestResults.Application.deps.json
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults.Application\bin\Debug\net5.0\SubmitBloodTestResults.Application.dll
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults.Application\bin\Debug\net5.0\ref\SubmitBloodTestResults.Application.dll
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults.Application\bin\Debug\net5.0\SubmitBloodTestResults.Application.pdb
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults.Application\obj\Debug\net5.0\SubmitBloodTestResults.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults.Application\obj\Debug\net5.0\SubmitBloodTestResults.Application.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults.Application\obj\Debug\net5.0\SubmitBloodTestResults.Application.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults.Application\obj\Debug\net5.0\SubmitBloodTestResults.Application.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults.Application\obj\Debug\net5.0\SubmitBloodTestResults.Application.dll
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults.Application\obj\Debug\net5.0\ref\SubmitBloodTestResults.Application.dll
+C:\Users\ASUS\Desktop\yulia\Projects\SubmitBloodTestResults\SubmitBloodTestResults.Application\obj\Debug\net5.0\SubmitBloodTestResults.Application.pdb

@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5ea139f6-c948-46bb-8511-7e8a714fd6bb": {
+      "ProjectGuid": "5ea139f6-c948-46bb-8511-7e8a714fd6bb",
+      "DisplayName": "SubmitBloodTestResults.Frontend",
+      "ColorIndex": 0
+    },
+    "1f2d9849-f549-4110-93d0-d88d122578aa": {
+      "ProjectGuid": "1f2d9849-f549-4110-93d0-d88d122578aa",
+      "DisplayName": "SubmitBloodTestResults.Application",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
